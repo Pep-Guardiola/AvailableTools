@@ -76,7 +76,7 @@ export interface ToolCard {
   due: null;
   dueReminder: null;
   email: null;
-  idBoard: IDBoard;
+  idBoard: string;
   idChecklists: any[];
   idList: string;
   idMembers: any[];
@@ -129,17 +129,9 @@ export interface Cover {
   idAttachment: null;
   color: null;
   idUploadedBackground: null;
-  size: Size;
-  brightness: Brightness;
+  size: string;
+  brightness: string;
   idPlugin: null;
-}
-
-export enum Brightness {
-  Dark = 'dark',
-}
-
-export enum Size {
-  Normal = 'normal',
 }
 
 export interface DescData {
@@ -147,7 +139,3 @@ export interface DescData {
 }
 
 export interface Emoji {}
-
-export enum IDBoard {
-  The63C510Cc1Ca08F01F5F76A07 = '63c510cc1ca08f01f5f76a07',
-}

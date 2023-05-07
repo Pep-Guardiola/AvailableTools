@@ -1,6 +1,6 @@
 <div class="card board" *ngIf="operationsList$ | async as operationsList">
   <div class="card-body">
-    <h5 class="card-title">{{operationsList.boardInfo.name}}</h5>
+    <h5 class="card-title board-title">{{operationsList.boardInfo.name}}</h5>
     <p class="card-text">{{operationsList.boardInfo.desc}}</p>
   </div>
   <div class="row operations">
