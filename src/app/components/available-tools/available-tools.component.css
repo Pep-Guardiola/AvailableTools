@@ -1,0 +1,28 @@
+.board {
+  margin: 0 5rem 0 5rem
+
+}
+.operation-card {
+  background-color: #ebecf0;
+  width: 18rem;
+}
+
+.operations {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-top: 0.5rem;
+}
+
+.tool-card {
+  text-decoration: none;
+}
+
+.tool-names {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+

@@ -1,0 +1,20 @@
+<div class="card board" *ngIf="operationsList$ | async as operationsList">
+  <div class="card-body">
+    <h5 class="card-title">{{operationsList.boardInfo.name}}</h5>
+    <p class="card-text">{{operationsList.boardInfo.desc}}</p>
+  </div>
+  <div class="row operations">
+    <ng-container *ngFor="let operation of operationsList.listOfOperations" class="operation-list">
+      <div class="card operation-card">
+        <h5 class="card-title">{{operation.name}}</h5>
+        <ng-container class="card-body" *ngFor="let tool of operationsList.tools">
+          <a href="{{tool.desc}}" target="_blank" class="tool-card">
+            <h6 class="card mb-2 text-muted tool-names" *ngIf="operation.id === tool.idList">{{tool.name}}</h6>
+          </a>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
